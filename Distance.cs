@@ -58,20 +58,20 @@ namespace Lab2_U3
         public static Distance operator - (Distance d1, Distance d2)
         {
             double a = (d1.foot * 12 + d1.inch) - (d2.foot * 12 + d2.inch);
-            if (a < 0)
-            {
+            //if (a < 0)
+            //{
                 int foot = (int)(a / 12);
                 double inch = (a % 12);
                 Distance dif = new Distance(foot, inch);
                 return dif;
-            }
-            else
-            {
-                int foot = (int)(a / 12);
-                double inch = (a % 12);
-                Distance dif = new Distance(foot, inch);
-                return dif;
-            }
+            //}
+            //else
+            //{
+            //    int foot = (int)(a / 12);
+            //    double inch = (a % 12);
+            //    Distance dif = new Distance(foot, inch);
+            //    return dif;
+            //}
 
 
             
